@@ -66,7 +66,7 @@ public class GM : MonoBehaviour {
 	public void LoseLife()
 	{
 		lives--;
-		Debug.Log("Lives:" + lives);
+		//Debug.Log("Lives:" + lives);
 		livesText.text = "Lives: " + lives;
 		Instantiate(deathParticles, clonePaddle.transform.position, Quaternion.identity);
 		Destroy(clonePaddle);
@@ -82,7 +82,7 @@ public class GM : MonoBehaviour {
 	public void DestroyBrick()
 	{
 		bricks--;
-		Debug.Log("Bricks:" + bricks);
+		//Debug.Log("Bricks:" + bricks);
 		CheckGameOver();
 	}
 }
